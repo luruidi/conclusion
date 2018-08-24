@@ -1,0 +1,19 @@
+通配符：
+* 匹配多个字符
+？匹配单个字符
+[] [13]匹配1和3,[1-3]匹配1到3
+
+
+删除文件夹 rm -rf 文件名
+
+
+添加用户 useradd -d /home/luruidi -m luruidi
+删除用户 userdel -r luruidi
+普通用户修改密码 在root用户下passwd用户名
+获取ip dhclient
+
+
+配置java环境：在/etc/profile中添加
+		export	JAVA_HOME= 
+		export  PATH=$PATH:$JAVA_HOME/bin
+最后source profile（让配置生效）  

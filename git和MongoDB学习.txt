@@ -1,0 +1,34 @@
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/luruidi/document.git
+git push -u origin master
+
+修改后：
+git status 查看修改的文件
+git add . (全部文件)
+git commit -m "mes"
+git push origin master
+
+
+
+
+模糊查询
+new Query().addCriteria(Criteria.where("key").regex(".*?\\" +"value"+ ".*")); 
+分页
+new Query().limit(8).skip(1);
+排序
+new Query().with(new Sort(new Sort.Order(Sort.Direction.DESC, "")))
+
+find(query.limit(end - begin).skip(begin).with(new Sort(new Sort.Order(direction, orderField))), ProcessLandLog.class)
+
+query.limit(end - begin).skip(begin).with(new Sort(new Sort.Order(direction, orderField)))
+
+new Sort(new Sort.Order(direction, orderField))
+
+
+
+
+
+
+

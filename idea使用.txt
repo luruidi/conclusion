@@ -1,0 +1,17 @@
+安装idea:
+需在idea64.exe.vmoptions添加（-Dfile.encoding=utf-8）
+
+idea快捷键:
+ALT+F8 debug查看对象的值
+CTRL+SHIFT+ENTER 自动补全末尾的字符
+Ctrl+D复制当前行到下一行
+CTRL+Y删除当前行
+Ctrl+Alt+L 代码格式化
+CTRL+ALT+T 将代码块快速包裹
+CTRL+ALT+V 为方法自动添加返回值
+CTRL+W 选你所想
+CTRL+SHIFT+F9 重新编译
+
+创建maven项目
+-DarchetypeCatalog=internal
+archetypeCatalog=internal
