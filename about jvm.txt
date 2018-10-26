@@ -16,3 +16,7 @@ java jvm分为程序计数器、虚拟机栈、虚拟机堆、本地方法栈、
 	(2)方法区中的常量引用的对象
 	(3)方法区的静态变量引用的对象
 	(4)本地方法栈native方法的引用的对象
+
+类加载过程：jvm把编译后的.class文件中的类信息加载到内存，并解析生成对象的class对象过程。
+类加载过程主要分为以下几部分：加载、验证、准备、解析、初始化、使用、卸载。
+类加载加载时使用双亲委派机制：当一个类加载器收到类加载请求时，首先判断这个类是否被加载过，如果没被加载过他并不会直接去加载这个类，而是把这个请求委派给他的父类（自定义类加载器->application classLoader->extendsion classLoader->bootstrap classLoader），直至最顶层的Bootstrap ClassLoader，如果父类加载失败，就会尝试让子类加载,子类也都加载的时候，就会报出ClassNotFoundException
